@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Github, Linkedin, Instagram, Globe, Mail } from "lucide-react";
 import "./globals.css";
 import { Socials } from "@/components/Socials";
 
