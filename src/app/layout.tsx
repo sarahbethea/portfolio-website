@@ -23,17 +23,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">Sarah Bethea</h1>
 
-                {/* Headshot */}
+                {/* Headshot
                 <div className="flex justify-center">
                   <img
                     src="/me.png"
                     alt="Sarah Bethea headshot"
                     className="mt-6 w-48 h-48 rounded-full object-cover"
                   />
-                </div>
+                </div> */}
                 
                 <p className="mt-6 text-sub max-w-md">
-                  CS Post-Baccalaureate Student specializing in Python, AI systems, and cloud-based architecture for scalable solutions.
+                  CS Post-Baccalaureate Student enthusiastic about Python, AI systems, and cloud-based architecture for scalable solutions.
                 </p>
 
                 <nav className="mt-10 space-y-4 text-sub">

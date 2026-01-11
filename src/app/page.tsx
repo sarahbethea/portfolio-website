@@ -1,55 +1,12 @@
 import Badge from "@/components/Badge";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
+import Image from "next/image";
 
 export default function Page() {
   return (
     <div className="space-y-24">
-      {/* ABOUT */}
-      <section id="about" className="scroll-mt-24 space-y-6 leading-7">
-        <h2 className="text-xl font-semibold">About</h2>
-        <p className="text-sub">
-      I’m a computer science student at the <span className="text-ink">University of Montana</span>, where I’m building a strong foundation in software engineering and AI systems. Before beginning my degree, I completed a full-stack development bootcamp that introduced me to the fundamentals of creating APIs and designing front-end interfaces. 
-        </p>
-        <p className="text-sub">
-      Since then, I’ve gained experience working with <span className="text-ink">Python, Java, and JavaScript</span> and I enjoy applying these languages to projects involving open-source AI models, data analysis, and automation. My recent work explores how to develop and implement AI-powered backends to create useful, innovative, and practical tools. I’m currently expanding my skills through a <span className="text-ink">machine learning and computer vision course</span> with OpenCV.
-        </p>
-        <p className="text-sub">
-      I am also deeply interested in <span className="text-ink">cloud architecture and DevOps</span>. I use <span className="text-ink">Docker</span> to containerize applications - such as my TalkTrack demo - and am actively learning <span className="text-ink">Kubernetes, AWS, and cloud infrastructure design</span> through self-study. My next goal is to earn the <span className="text-ink">AWS Certified Solutions Architect</span> credential and continue developing a skill set that bridges AI development with scalable, production-ready systems.
-        </p>
-      </section>
 
-
-
-      <div className="hr" />
-
-      {/* BACKGROUND */}
-      <section id="background" className="scroll-mt-24">
-        <h2 className="text-xl font-semibold">Background</h2>
-
-        <p className="mt-4 text-sub leading-7">
-          I’m currently completing a <span className="text-ink">Post-Baccalaureate in Computer Science</span> at the
-          University of Montana, maintaining a 4.0 GPA while studying algorithms, data structures, software engineering,
-          and systems design. My coursework has deepened my understanding of computational problem-solving and clean,
-          maintainable code architecture.
-        </p>
-
-        <p className="mt-4 text-sub leading-7">
-          Prior to the program, I attended <span className="text-ink">Montana Code School’s</span> full-stack bootcamp,
-          where I learned modern web development with JavaScript, React, Node.js, and RESTful APIs. Since then, I’ve
-          continued expanding into <span className="text-ink">Python, AI/ML, and cloud technologies</span> through
-          self-directed study and hands-on projects.
-        </p>
-
-        <p className="mt-4 text-sub leading-7">
-          Professionally, I’ve worked as a <span className="text-ink">Freelance Developer</span> since 2024 — building
-          production-ready applications and collaborating with creative agencies on client projects. Highlights include
-          a Poker Trainer App with real-time hand analysis in React, and a CustomTkinter GUI controlling Arduino-based
-          water-sampling hardware.
-        </p>
-      </section>
-
-      <div className="hr" />
 
       {/* PROJECTS */}
       <section id="projects" className="scroll-mt-24">
@@ -65,6 +22,22 @@ export default function Page() {
             <p className="mt-2 text-sub leading-7">
               FastAPI backend that transcribes audio, performs speaker diarization, extracts key themes, and returns structured segment data for the TalkTrack plugin. Built with FastAPI, PyAnnote, Whisper, and Hugging Face Transformers. 
             </p>
+            <div className="mt-4 grid max-w-md grid-cols-2 gap-4">
+              <Image
+                src="/talktrack-pics/talktrack1.png"
+                alt="TalkTrack API demo screenshot"
+                width={1064}
+                height={798}
+                className="w-full rounded-md border"
+              />
+              <Image
+                src="/talktrack-pics/talktrack.app-screenshot.png"
+                alt="TalkTrack diarization screenshot"
+                width={1064}
+                height={798}
+                className="w-full rounded-md border"
+              />
+            </div>
             <div className="mt-3 flex flex-wrap gap-2">
               <Badge color="python">Python</Badge>
               <Badge color="fastapi">FastAPI</Badge>
@@ -83,6 +56,22 @@ export default function Page() {
             <p className="mt-2 text-sub leading-7">
               AI-powered Adobe Premiere Pro plugin that automatically cuts, labels, and annotates interview footage using speaker diarization and topic analysis. Built with React (UXP) and integrated with a FastAPI backend.  
             </p>
+            <div className="mt-4 grid max-w-md grid-cols-2 gap-4">
+              <Image
+                src="/talktrack-pics/talktrack2.png"
+                alt="TalkTrack API demo screenshot"
+                width={1064}
+                height={798}
+                className="w-full rounded-md border"
+              />
+              <Image
+                src="/talktrack-pics/talktrack3.png"
+                alt="TalkTrack diarization screenshot"
+                width={1064}
+                height={798}
+                className="w-full rounded-md border"
+              />
+            </div>
             <div className="mt-3 flex flex-wrap gap-2">
               <Badge color="react">React</Badge>
               <Badge color="uxp">Adobe UXP</Badge>
@@ -121,6 +110,52 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* ABOUT */}
+      <section id="about" className="scroll-mt-24 space-y-6 leading-7">
+        <h2 className="text-xl font-semibold">About</h2>
+        <p className="text-sub">
+      I’m a computer science student at the <span className="text-ink">University of Montana</span>, where I’m building a strong foundation in software engineering and AI systems. Before beginning my degree, I completed a full-stack development bootcamp that introduced me to the fundamentals of creating APIs and designing front-end interfaces. 
+        </p>
+        <p className="text-sub">
+      Since then, I’ve gained experience working with <span className="text-ink">Python, Java, and JavaScript</span> and I enjoy applying these languages to projects involving open-source AI models, data analysis, and automation. My recent work explores how to develop and implement AI-powered backends to create useful, innovative, and practical tools. I’m currently expanding my skills through a <span className="text-ink">machine learning and computer vision course</span> with OpenCV.
+        </p>
+        <p className="text-sub">
+      I am also deeply interested in <span className="text-ink">cloud architecture and DevOps</span>. I use <span className="text-ink">Docker</span> to containerize applications - such as my TalkTrack demo - and am actively learning <span className="text-ink">Kubernetes, AWS, and cloud infrastructure design</span> through self-study.
+        </p>
+      </section>
+
+
+
+      <div className="hr" />
+
+      {/* BACKGROUND */}
+      <section id="background" className="scroll-mt-24">
+        <h2 className="text-xl font-semibold">Background</h2>
+
+        <p className="mt-4 text-sub leading-7">
+          I’m currently completing a <span className="text-ink">Post-Baccalaureate in Computer Science</span> at the
+          University of Montana, maintaining a 4.0 GPA while studying algorithms, data structures, software engineering,
+          and systems design. My coursework has deepened my understanding of computational problem-solving and clean,
+          maintainable code architecture.
+        </p>
+
+        <p className="mt-4 text-sub leading-7">
+          Prior to the program, I attended <span className="text-ink">Montana Code School’s</span> full-stack bootcamp,
+          where I learned modern web development with JavaScript, React, Node.js, and RESTful APIs. Since then, I’ve
+          continued expanding into <span className="text-ink">Python, AI/ML, and cloud technologies</span> through
+          self-directed study and hands-on projects.
+        </p>
+
+        <p className="mt-4 text-sub leading-7">
+          Professionally, I’ve worked as a <span className="text-ink">Freelance Developer</span> building
+          production-ready applications and collaborating with a local creative agency on client projects. Highlights include
+          a Poker Trainer App with real-time hand analysis in React, and a CustomTkinter GUI controlling Arduino-based
+          water-sampling hardware.
+        </p>
+      </section>
+
+      <div className="hr" />
 
       <section id="contact" className="scroll-mt-24">
         <h2 className="text-xl font-semibold text-ink">Contact</h2>
