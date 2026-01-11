@@ -3,7 +3,7 @@ import "./globals.css";
 import { Socials } from "@/components/Socials";
 
 export const metadata: Metadata = {
-  title: "Sarah Bethea — Front End / AI Engineer",
+  title: "Sarah Bethea — Python / AI Developer",
   description: "I build accessible, performant interfaces and ML-backed tools.",
 };
 
